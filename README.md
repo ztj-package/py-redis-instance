@@ -4,8 +4,8 @@
 这是一个 Redis 实例模块。
 
 ### 链接
-- [GitHub](https://github.com/ztj-package/py-redis-instance)
-- [PyPI](https://pypi.org/project/py-ztj-redis-instance)
+- [GitHub](https://github.com/ztj-package/py-redis)
+- [PyPI](https://pypi.org/project/py-ztj-redis)
 
 ## 安装
 ```
@@ -14,14 +14,14 @@ pip install py-ztj-redis
 
 ## 依赖
 ```
-pip install redis>=3.2.1
-pip install py-ztj-registry>=0.0.1
+pip install redis
+pip install py-ztj-registry==0.0.4
 ```
 
 ## 使用
 ```
-from redis_instance import Redis
+from ZtjRedis import Redis
 
-redis_instance = Redis()
-print(redis_instance.ping())
+redis = Redis()
+print(redis.ping())
 ```

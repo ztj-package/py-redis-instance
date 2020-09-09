@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Intro: Redis 实例模块安装文件
+# Intro: Redis 模块安装文件
 # Author: Ztj
 # Email: ztj1993@gmail.com
 
@@ -12,21 +12,24 @@ f = open(os.path.join(os.path.dirname(__file__), 'README.md'), encoding='utf8')
 readme = f.read()
 f.close()
 
-f = open(os.path.join(os.path.dirname(__file__), 'redis_instance.py'), encoding='utf8')
+f = open(os.path.join(os.path.dirname(__file__), 'ZtjRedis.py'), encoding='utf8')
 version = re.search(r'__version__ = \'(.*?)\'', f.read()).group(1)
 f.close()
 
 setup(
-    name='py-ztj-redis-instance',
+    name='py-ztj-redis',
     version=version,
     description='python redis instance package',
     long_description=readme,
-    long_description_content_type="text/markdown",
-    py_modules=["redis_instance"],
-    url='http://github.com/ztj1993/PythonPackages/blob/master/py_redis_instance',
+    long_description_content_type='text/markdown',
+    py_modules=['ZtjRedis'],
+    url='https://github.com/ztj-package/py-redis',
     author='ZhangTianJie',
     author_email='ztj1993@gmail.com',
     keywords='redis',
-    install_requires=['redis', 'py-ztj-registry'],
+    install_requires=[
+        'redis',
+        'py-ztj-registry==0.0.4',
+    ],
     license='MIT License',
 )

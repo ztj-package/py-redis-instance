@@ -1,17 +1,16 @@
 # -*- coding: utf-8 -*-
-# Intro: Redis 实例模块
+# Intro: Redis 模块
 # Author: Ztj
 # Email: ztj1993@gmail.com
-# Version: 0.0.3
-# Date: 2020-09-01
+# Date: 2020-09-09
 
 import os
 import time
 
 import redis
-from registry import Registry
+from ZtjRegistry import Registry
 
-__version__ = '0.0.3'
+__version__ = '0.0.4'
 
 
 class Redis(object):
