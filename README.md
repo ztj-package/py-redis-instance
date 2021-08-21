@@ -15,7 +15,6 @@ pip install py-ztj-redis
 ## 依赖
 ```
 pip install redis
-pip install py-ztj-registry==0.0.4
 ```
 
 ## 使用

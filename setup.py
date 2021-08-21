@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-# Intro: Redis 模块安装文件
 # Author: Ztj
 # Email: ztj1993@gmail.com
 
@@ -12,7 +11,7 @@ readme = (here / 'README.md').read_text(encoding='utf-8')
 
 setup(
     name='py-ztj-redis',
-    version='0.0.5',
+    version='1.0.0',
     description='python redis instance package',
     long_description=readme,
     long_description_content_type='text/markdown',
@@ -23,7 +22,6 @@ setup(
     keywords='redis',
     install_requires=[
         'redis',
-        'py-ztj-registry==0.0.4',
     ],
     license='MIT License',
 )
